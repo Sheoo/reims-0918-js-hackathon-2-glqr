@@ -28,7 +28,7 @@ class App extends Component {
   check() {
     if (this.state.detailSelected && this.state.objectSelected) {
       let request = this.state.objects[this.state.objectSelected][
-        this.state.detailSelected.detailType
+        this.state.detailSelected
       ];
       alert(request);
       this.setState({ detailSelected: null, objectSelected: null });
@@ -43,10 +43,16 @@ class App extends Component {
           <Paper elevation={4} style={{ margin: 32 }}>
             <Grid container justify="center">
               <Grid item xs={12} sm={6}>
-                <Details details={this.state.details} handleClick={this.handleDetailClick} />
+                <Details
+                  details={this.state.details}
+                  handleClick={this.handleDetailClick}
+                />
               </Grid>
               <Grid item xs={12} sm={6} style={{ textAlign: "right" }}>
-                <Objects objects={this.state.objects} handleClick={this.handleObjectClick} />
+                <Objects
+                  objects={this.state.objects}
+                  handleClick={this.handleObjectClick}
+                />
               </Grid>
             </Grid>
           </Paper>

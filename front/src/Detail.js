@@ -6,7 +6,7 @@ const Detail = ({ detailType, detailLabel, handleClick }) => (
     clickable
     color="primary"
     label={detailLabel}
-    onClick={() => handleClick({ detailType })}
+    onClick={() => handleClick(detailType)}
   />
 );
 
