@@ -1,13 +1,18 @@
 import React, { Component } from "react";
-import { Grid, Paper, Chip } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 import "./App.css";
+import Details from "./Details";
+import Objects from "./Objects";
+const data = require("./data.json");
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       detailSelected: null,
-      objectSelected: null
+      details: data.details,
+      objectSelected: null,
+      objects: data.objects
     };
     this.handleDetailClick = this.handleDetailClick.bind(this);
     this.handleObjectClick = this.handleObjectClick.bind(this);
@@ -22,7 +27,10 @@ class App extends Component {
   }
   check() {
     if (this.state.detailSelected && this.state.objectSelected) {
-      alert(`${this.state.detailSelected}.${this.state.objectSelected}`);
+      let request = this.state.objects[this.state.objectSelected][
+        this.state.detailSelected.detailType
+      ];
+      alert(request);
       this.setState({ detailSelected: null, objectSelected: null });
     }
   }
@@ -35,44 +43,10 @@ class App extends Component {
           <Paper elevation={4} style={{ margin: 32 }}>
             <Grid container justify="center">
               <Grid item xs={12} sm={6}>
-                <Chip
-                  clickable
-                  color="primary"
-                  label="Event"
-                  onClick={() => this.handleDetailClick("event")}
-                />
-                <Chip
-                  clickable
-                  color="primary"
-                  label="Info"
-                  onClick={() => this.handleDetailClick("info")}
-                />
-                <Chip
-                  clickable
-                  color="primary"
-                  label="Explications"
-                  onClick={() => this.handleDetailClick("explications")}
-                />
-                <Chip
-                  clickable
-                  color="primary"
-                  label="Photos"
-                  onClick={() => this.handleDetailClick("photos")}
-                />
+                <Details details={this.state.details} handleClick={this.handleDetailClick} />
               </Grid>
               <Grid item xs={12} sm={6} style={{ textAlign: "right" }}>
-                <Chip
-                  clickable
-                  color="primary"
-                  label="Imprimante 3D"
-                  onClick={() => this.handleObjectClick("print")}
-                />
-                <Chip
-                  clickable
-                  color="primary"
-                  label="Borne d'arcade"
-                  onClick={() => this.handleObjectClick("arcade")}
-                />
+                <Objects objects={this.state.objects} handleClick={this.handleObjectClick} />
               </Grid>
             </Grid>
           </Paper>
