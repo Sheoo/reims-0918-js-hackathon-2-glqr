@@ -27,7 +27,7 @@ class App extends Component {
   }
   check() {
     if (this.state.detailSelected && this.state.objectSelected) {
-      let request = this.state.objects[this.state.objectSelected][
+      let request = this.state.objects[this.state.objectSelected - 1][
         this.state.detailSelected
       ];
       alert(request);
