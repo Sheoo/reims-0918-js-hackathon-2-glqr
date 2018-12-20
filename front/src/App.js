@@ -9,30 +9,17 @@ class App extends Component {
       detailSelected: null,
       objectSelected: null
     };
-
-    this.handleDetail1Click = this.handleDetail1Click.bind(this);
-    this.handleDetail2Click = this.handleDetail2Click.bind(this);
-
-    this.handleObject1Click = this.handleObject1Click.bind(this);
-    this.handleObject2Click = this.handleObject2Click.bind(this);
-
+    this.handleDetailClick = this.handleDetailClick.bind(this);
+    this.handleObjectClick = this.handleObjectClick.bind(this);
     this.check = this.check.bind(this);
   }
 
-  handleDetail1Click() {
-    this.setState({ detailSelected: "Event" }, this.check);
+  handleDetailClick(value) {
+    this.setState({ detailSelected: value }, this.check);
   }
-  handleDetail2Click() {
-    this.setState({ detailSelected: "Info" }, this.check);
+  handleObjectClick(value) {
+    this.setState({ objectSelected: value }, this.check);
   }
-
-  handleObject1Click() {
-    this.setState({ objectSelected: "Imprimante 3D" }, this.check);
-  }
-  handleObject2Click() {
-    this.setState({ objectSelected: "Borne d'arcade" }, this.check);
-  }
-
   check() {
     if (this.state.detailSelected && this.state.objectSelected) {
       alert(`${this.state.detailSelected}.${this.state.objectSelected}`);
@@ -49,40 +36,42 @@ class App extends Component {
             <Grid container justify="center">
               <Grid item xs={12} sm={6}>
                 <Chip
-                  id="event"
                   clickable
                   color="primary"
                   label="Event"
-                  onClick={() => this.handleDetail1Click()}
+                  onClick={() => this.handleDetailClick("event")}
                 />
                 <Chip
-                  id="info"
                   clickable
                   color="primary"
                   label="Info"
-                  onClick={() => this.handleDetail2Click()}
+                  onClick={() => this.handleDetailClick("info")}
                 />
                 <Chip
                   clickable
                   color="primary"
-                  label="Veeeryyy loooong Type 3"
+                  label="Explications"
+                  onClick={() => this.handleDetailClick("explications")}
                 />
-                <Chip clickable color="primary" label="Type 4" />
+                <Chip
+                  clickable
+                  color="primary"
+                  label="Photos"
+                  onClick={() => this.handleDetailClick("photos")}
+                />
               </Grid>
               <Grid item xs={12} sm={6} style={{ textAlign: "right" }}>
                 <Chip
-                  id="print"
                   clickable
                   color="primary"
                   label="Imprimante 3D"
-                  onClick={() => this.handleObject1Click()}
+                  onClick={() => this.handleObjectClick("print")}
                 />
                 <Chip
-                  id="arcade"
                   clickable
                   color="primary"
                   label="Borne d'arcade"
-                  onClick={() => this.handleObject2Click()}
+                  onClick={() => this.handleObjectClick("arcade")}
                 />
               </Grid>
             </Grid>
