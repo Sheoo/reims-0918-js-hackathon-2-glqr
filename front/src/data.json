@@ -1,13 +1,13 @@
 {
   "details": [
-    { "type": "description", "label": "Description" },
-    { "type": "info", "label": "Informations" },
-    { "type": "events", "label": "Evènements" },
-    { "type": "picture", "label": "Photos" }
+    { "id": "description", "name": "Description" },
+    { "id": "info", "name": "Informations" },
+    { "id": "events", "name": "Evènements" },
+    { "id": "picture", "name": "Photos" }
   ],
   "objects": [
     {
-      "id": "object-1",
+      "id": "1",
       "name": "Bar éphémère",
       "description": "Un bar éphémère est un bar destiné à changé de thème pour une présentation",
       "info": "Notre bar éphémère est disponible à toutes propositions de thèmes et est disponible à l'entrée de notre bâtiment",

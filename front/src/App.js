@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Paper } from "@material-ui/core";
+import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import "./App.css";
 import Details from "./Details";
 import Objects from "./Objects";
@@ -36,33 +37,50 @@ class App extends Component {
     }
   }
 
+  onDragEnd = result => {};
+
   render() {
     return (
-      <Grid container alignItems="center" style={{ height: "100%" }}>
-        <Grid item xs={12}>
-          <Paper elevation={4} style={{ margin: 32 }}>
-            <Grid container justify="center">
-              <Grid item xs={12} sm={6}>
-                <Details
-                  details={this.state.details}
-                  handleClick={this.handleDetailClick}
-                />
-              </Grid>
-              {/* créer la zone dropable Result >
+      <DragDropContext
+        onDragEnd={this.onDragEnd}
+        onDragStart={this.onDragStart}
+        onDragUpdate={this.onDragUpdate}
+      >
+        <Grid container alignItems="center" style={{ height: "100%" }}>
+          <Grid item xs={12}>
+            <Paper elevation={4} style={{ margin: 32 }}>
+              <Grid container justify="center">
+                <Grid item xs={12} sm={6}>
+                  <Objects
+                    objects={this.state.objects}
+                    handleClick={this.handleObjectClick}
+                  />
+                </Grid>
+                <Droppable droppableId="droppable">
+                  {provided => (
+                    <div ref={provided.innerRef} {...provided.droppableProps}>
+                      <h2>I am a droppable!</h2>
+                      {provided.placeholder}
+                    </div>
+                  )}
+                </Droppable>
+
+                {/* créer la zone dropable Result >
                 - si un détail est sélectionné, afficher le type de détail
                 - si un object est sélectionné, afficher le name de l'object
                 - si un détail & un object sont sélectionnés, afficher le type de l'object
                 */}
-              <Grid item xs={12} sm={6} style={{ textAlign: "right" }}>
-                <Objects
-                  objects={this.state.objects}
-                  handleClick={this.handleObjectClick}
-                />
+                <Grid item xs={12} sm={6} style={{ textAlign: "right" }}>
+                  <Details
+                    details={this.state.details}
+                    handleClick={this.handleDetailClick}
+                  />
+                </Grid>
               </Grid>
-            </Grid>
-          </Paper>
+            </Paper>
+          </Grid>
         </Grid>
-      </Grid>
+      </DragDropContext>
     );
   }
 }
