@@ -7,7 +7,7 @@
   ],
   "objects": [
     {
-      "id": 1,
+      "id": "object-1",
       "name": "Bar éphémère",
       "description": "Un bar éphémère est un bar destiné à changé de thème pour une présentation",
       "info": "Notre bar éphémère est disponible à toutes propositions de thèmes et est disponible à l'entrée de notre bâtiment",

@@ -6,6 +6,7 @@ import Objects from "./Objects";
 const data = require("./data.json");
 
 class App extends Component {
+  // on DragEnd : faire un setState de detailSelected ou de objectSelected selon l'id reçu
   constructor(props) {
     super(props);
     this.state = {
@@ -35,7 +36,6 @@ class App extends Component {
     }
   }
 
-  // style={{ display: "flex-box", flexDirection: "column" }}
   render() {
     return (
       <Grid container alignItems="center" style={{ height: "100%" }}>
@@ -48,6 +48,11 @@ class App extends Component {
                   handleClick={this.handleDetailClick}
                 />
               </Grid>
+              {/* créer la zone dropable Result >
+                - si un détail est sélectionné, afficher le type de détail
+                - si un object est sélectionné, afficher le name de l'object
+                - si un détail & un object sont sélectionnés, afficher le type de l'object
+                */}
               <Grid item xs={12} sm={6} style={{ textAlign: "right" }}>
                 <Objects
                   objects={this.state.objects}
