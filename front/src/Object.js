@@ -1,11 +1,11 @@
 import React from "react";
 import { Chip } from "@material-ui/core";
 
-const Object = ({ objectName, objectId, handleClick }) => (
+const Object = ({ objectLabel, objectId, handleClick }) => (
   <Chip
     clickable
     color="primary"
-    label={objectName}
+    label={objectLabel}
     onClick={() => handleClick(objectId)}
   />
 );

@@ -4,7 +4,7 @@ import Detail from "./Detail";
 const Details = ({ details, handleClick }) => (
   <div>
     {details.map((detail, key) => (
-      <Detail detailType={detail.type} detailLabel={detail.label} handleClick={handleClick} key={key} />
+      <Detail detailLabel={detail.label} detailType={detail.type} handleClick={handleClick} key={key} />
     ))}
   </div>
 );

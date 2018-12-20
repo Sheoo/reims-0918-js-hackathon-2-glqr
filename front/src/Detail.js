@@ -1,7 +1,7 @@
 import React from "react";
 import { Chip } from "@material-ui/core";
 
-const Detail = ({ detailType, detailLabel, handleClick }) => (
+const Detail = ({ detailLabel, detailType, handleClick }) => (
   <Chip
     clickable
     color="primary"

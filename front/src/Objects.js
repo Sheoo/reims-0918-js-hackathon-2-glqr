@@ -4,7 +4,7 @@ import Object from "./Object";
 const Objects = ({ objects, handleClick }) => (
   <div>
     {objects.map((object, key) => (
-      <Object objectName={object.name} objectId={object.id} handleClick={handleClick} key={key} />
+      <Object objectLabel={object.name} objectId={object.id} handleClick={handleClick} key={key} />
     ))}
   </div>
 );
