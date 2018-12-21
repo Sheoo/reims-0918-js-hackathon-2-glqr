@@ -1,23 +1,23 @@
 import React from "react";
-import Object from "./Object";
+import Installation from "./Installation";
 import { Draggable, Droppable } from "react-beautiful-dnd";
 
-const Objects = ({ objects, handleClick }) => (
+const Installations = ({ installations, handleClick }) => (
   <Droppable droppableId="droppable">
     {(provided, snapshot) => (
       <div ref={provided.innerRef}>
-        {objects.map((object, index) => (
-          // rendre Object draggable avec object.id comme draggable id
-          <Draggable draggableId={object.id} index={index} key={index}>
+        {installations.map((installation, index) => (
+          // rendre installation draggable avec installation.id comme draggable id
+          <Draggable draggableId={installation.id} index={index} key={index}>
             {provided => (
               <div
                 {...provided.draggableProps}
                 {...provided.dragHandleProps}
                 ref={provided.innerRef}
               >
-                <Object
-                  objectLabel={object.name}
-                  objectId={object.id}
+                <Installation
+                  installationLabel={installation.name}
+                  installationId={installation.id}
                   handleClick={handleClick}
                   index={index}
                 />
@@ -31,4 +31,4 @@ const Objects = ({ objects, handleClick }) => (
   </Droppable>
 );
 
-export default Objects;
+export default Installations;

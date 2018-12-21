@@ -8,7 +8,7 @@ const Details = ({ details, handleClick }) => (
       <div ref={provided.innerRef}>
         {details.map((detail, index) => (
           // rendre detail draggable avec detail.type comme draggable id
-          <Draggable draggableId={detail.type} index={index} key={index}>
+          <Draggable draggableId={detail.id} index={index} key={index}>
             {provided => (
               <div
                 {...provided.draggableProps}
@@ -16,8 +16,8 @@ const Details = ({ details, handleClick }) => (
                 ref={provided.innerRef}
               >
                 <Detail
-                  detailLabel={detail.label}
-                  detailType={detail.type}
+                  detailLabel={detail.name}
+                  detailType={detail.id}
                   handleClick={handleClick}
                   index={index}
                 />
