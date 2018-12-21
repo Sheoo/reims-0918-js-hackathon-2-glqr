@@ -37,7 +37,7 @@
       "path": "icons/installations-icons/imprimante_c.svg",
       "description": "L'impression 3D est une technique de fabrication dite additive qui procède par ajout de matière, contrairement aux techniques procédant par retrait de matière comme l'usinage. L'impression 3D permet de réaliser des objets usuels, des pièces détachées ou encore des prototypes destinés aux essais. Le point de départ est un fichier informatique représentant l'objet en trois dimensions, décomposé en tranches. Ces informations sont envoyées à une imprimante 3D qui va réaliser la fabrication par ajout de couches successives.",
       "info": "Notre imprimante 3D est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
-      "events": "Venez utiliser notre imprimante 3D pendant ces évenements :  - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
+      "events": "Venez utiliser notre imprimante 3D pendant ces évenements : Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
       "picture": "https://farm6.staticflickr.com/5641/22516651663_8e9da48b2c_k.jpg"
     },
     {
@@ -46,7 +46,7 @@
       "path": "icons/installations-icons/laser_c.svg",
       "description": "La découpe laser est un procédé de fabrication qui consiste à découper la matière grâce à une grande quantité d’énergie générée par un laser et concentrée sur une très faible surface.",
       "info": "Notre découpeuse laser est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
-      "events": "Venez utiliser notre découpeuse laser pendant ces événements: - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
+      "events": "Venez utiliser notre découpeuse laser pendant ces événements : Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
       "picture": "https://farm5.staticflickr.com/4694/39705736994_01b98e7736_k.jpg"
     },
     {
@@ -55,16 +55,16 @@
       "path": "icons/installations-icons/tricoteuse_c.svg",
       "description": "La broderie machine (ou broderie à la machine) est un processus de broderie par lequel une machine à coudre ou une machine à broder est utilisée pour créer des motifs sur les textiles",
       "info": "Notre brodeuse est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
-      "events": "Venez utiliser notre brodeuse numérique pendant ces événements: - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
+      "events": "Venez utiliser notre brodeuse numérique pendant ces événements : Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
       "picture": "https://farm2.staticflickr.com/1450/25690280831_34acc438b3_k.jpg"
     },
     {
       "id": 5,
       "name": "Découpeuse vinyle",
       "path": "icons/installations-icons/plotter_c.svg",
-      "description": "La découpeuse vinyle est muni d'une fine lame permettant une découpe précise. La lame se déplace de droite à gauche tandis que le vinyle glisse sous la lame.",
+      "description": "La découpeuse vinyle est munie d'une fine lame permettant une découpe précise. La lame se déplace de droite à gauche tandis que le vinyle glisse sous la lame.",
       "info": "Notre découpeuse vinyle est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
-      "events": "Venez utiliser notre découpeuse vinyle pendant ces événements: - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
+      "events": "Venez utiliser notre découpeuse vinyle pendant ces événements : Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
       "picture": "https://farm3.staticflickr.com/2934/33703602311_a5800369ae_k.jpg"
     },
     {
@@ -72,8 +72,8 @@
       "name": "Borne d'arcade",
       "path": "icons/installations-icons/borne_c.svg",
       "description": "Machine à jouer payante ou gratuite, contenant un jeu, remplaçable ou non, qui est dotée d'un écran, d'un dispositif de contrôle, de plusieurs boutons-poussoirs et d'un monnayeur, et que l'on trouve dans les lieux publics, comme les salles d'arcade, les centres commerciaux et les bars.",
-      "info": "Nous disposons d'une Borne d'arcade et d'une borne miniature à Saint-Ex venez les utiliser ou créer votre jeux sur bornes d'arcades",
-      "events": "Venez utiliser nos bornes d'arcade pendant ces événements: ",
+      "info": "Nous disposons d'une borne d'arcade et d'une borne miniature à Saint-Ex ; venez pour les utiliser ou  simplement pour créer votre jeux sur bornes d'arcades",
+      "events": "Venez utiliser nos bornes d'arcade pendant ces événements : Tous les mercredis midi (12h > 14h) lors des évènements, soirées et vernissages",
       "picture": "https://farm1.staticflickr.com/901/40599822820_2200711035_k.jpg"
     },
     {
@@ -89,7 +89,7 @@
       "id": 8,
       "name": "Robot",
       "path": "icons/installations-icons/robot_c.svg",
-      "description": "",
+      "description": "Créons des robots permettant de réaliser des assemblages avec les Lego Mindstorm : création de plans de construction grâce au logiciel Lego Digital Designer",
       "info": "Nous disposons d'un atelier pour la création de robot",
       "events": "Venez utiliser/créer nos/vos robots pendant ces événements: Tous les samedis à partir de 8 ans: De 10h à 11h30 et à partir de 10 ans: De 13h30 à 15h: Atelier Robotique",
       "picture": "https://farm3.staticflickr.com/2860/34045249571_6a51a46704_k.jpg"
