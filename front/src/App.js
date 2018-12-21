@@ -47,7 +47,7 @@ class App extends Component {
     return (
       <Grid container style={{ height: "100%" }}>
         <Grid container justify="center">
-          <img src="icons/logo.png" />
+          <img style={{ margin: "20px" }} src="icons/logo.png" />
         </Grid>
         <Grid item xs={12}>
           <DragDropContext
