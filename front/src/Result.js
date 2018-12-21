@@ -24,11 +24,15 @@ const Result = ({
     {detailSelected && installationSelected && (
       <Paper>
         {detailSelected === "picture" ? (
-          <img src={installations[installationSelected - 1].picture} />
+          <img
+            style={{ width: "100%" }}
+            src={installations[installationSelected - 1].picture}
+          />
         ) : (
-          <Typography>
-            {installations[installationSelected - 1][detailSelected]}
-          </Typography>
+          <div>
+            <h2>{installations[installationSelected - 1][detailSelected]}</h2>
+            {/* alert(installations[installationSelected - 1][detailSelected]) */}
+          </div>
         )}
         <img src={getInstallation(installations, installationSelected).path} />
       </Paper>

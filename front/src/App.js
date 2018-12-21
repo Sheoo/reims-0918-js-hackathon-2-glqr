@@ -45,42 +45,54 @@ class App extends Component {
 
   render() {
     return (
-      <Grid container alignItems="center" style={{ height: "100%" }}>
+      <Grid container style={{ height: "100%" }}>
+        <Grid container justify="center">
+          <img src="icons/logo.png" />
+        </Grid>
         <Grid item xs={12}>
-          <Paper elevation={4} style={{ margin: 32 }}>
-            <DragDropContext
-              onDragEnd={this.onDragEnd}
-              onDragStart={this.onDragStart}
-              onDragUpdate={this.onDragUpdate}
-            >
-              <Grid container justify="center">
-                <Grid item xs={2}>
-                  <Details details={this.state.details} style={{}} />
-                </Grid>
-                <Grid item xs={8}>
-                  <Droppable droppableId={this.state.column.droppable.id}>
-                    {provided => (
-                      <div
-                        ref={provided.innerRef}
-                        {...provided.droppableProps}
-                        style={{ height: "100%" }}
-                      >
-                        <Result
-                          detailSelected={this.state.detailSelected}
-                          details={this.state.details}
-                          installationSelected={this.state.installationSelected}
-                          installations={this.state.installations}
-                        />
-                      </div>
-                    )}
-                  </Droppable>
-                </Grid>
-                <Grid item xs={2} style={{ textAlign: "right" }}>
-                  <Installations installations={this.state.installations} />
-                </Grid>
+          <DragDropContext
+            onDragEnd={this.onDragEnd}
+            onDragStart={this.onDragStart}
+            onDragUpdate={this.onDragUpdate}
+          >
+            <Grid container justify="center">
+              <Grid
+                className="border"
+                item
+                xs={2}
+                style={{ textAlign: "center", backgroundColor: "#005F82" }}
+              >
+                <Details details={this.state.details} />
               </Grid>
-            </DragDropContext>
-          </Paper>
+              <Grid item xs={6}>
+                <Droppable droppableId={this.state.column.droppable.id}>
+                  {provided => (
+                    <div
+                      ref={provided.innerRef}
+                      {...provided.droppableProps}
+                      style={{ height: "100%" }}
+                    >
+                      {/* {console.log(this.state.column.droppable.tasks)} */}
+                      <Result
+                        detailSelected={this.state.detailSelected}
+                        details={this.state.details}
+                        installationSelected={this.state.installationSelected}
+                        installations={this.state.installations}
+                      />
+                    </div>
+                  )}
+                </Droppable>
+              </Grid>
+              <Grid
+                className="border"
+                item
+                xs={4}
+                style={{ textAlign: "center", backgroundColor: "#EF914B" }}
+              >
+                <Installations installations={this.state.installations} />
+              </Grid>
+            </Grid>
+          </DragDropContext>
         </Grid>
       </Grid>
     );
