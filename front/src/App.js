@@ -7,7 +7,6 @@ import Installations from "./Installations";
 const data = require("./data.json");
 
 class App extends Component {
-  // on DragEnd : faire un setState de detailSelected ou de InstallationSelected selon l'id reçu
   constructor(props) {
     super(props);
     this.state = {
@@ -29,15 +28,34 @@ class App extends Component {
   }
   check() {
     if (this.state.detailSelected && this.state.installationSelected) {
-      let request = this.state.installations[this.state.installationSelected - 1][
-        this.state.detailSelected
-      ];
+      let request = this.state.installations[
+        this.state.installationSelected - 1
+      ][this.state.detailSelected];
       alert(request);
       this.setState({ detailSelected: null, installationSelected: null });
     }
   }
-
-  onDragEnd = result => {};
+  // on DragEnd : faire un setState de detailSelected ou de installationSelected selon l'id reçu
+  onDragEnd = result => {
+    const { destination, source, draggableId } = result;
+    if (!destination) {
+      return;
+    }
+    if (
+      destination.droppableId === source.droppableId &&
+      destination.index === source.index
+    ) {
+      console.log("draggableid :",source.draggableId);
+      console.log("destination :",destination.droppableId);
+      console.log("source :",source.droppableId);
+      return;
+    }
+    if (draggableId) {
+      console.log("dernier consolelog",source.draggableId);
+    }
+    // console.log(detailSelected)
+    // const column = this.state.columns;
+  };
 
   render() {
     return (
