@@ -16,6 +16,7 @@ const Details = ({ details }) => (
                 ref={provided.innerRef}
               >
                 <Detail
+                  detailPath={detail.path}
                   detailLabel={detail.name}
                   indexDetails={index}
                 />
