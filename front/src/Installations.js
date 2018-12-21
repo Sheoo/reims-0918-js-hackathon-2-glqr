@@ -7,7 +7,6 @@ const Installations = ({ installations }) => (
     {(provided, snapshot) => (
       <div ref={provided.innerRef}>
         {installations.map((installation, index) => (
-          // rendre installation draggable avec installation.id comme draggable id
           <Draggable draggableId={installation.id} index={index} key={index}>
             {provided => (
               <div
@@ -29,5 +28,5 @@ const Installations = ({ installations }) => (
     )}
   </Droppable>
 );
-// installationLabel, installationPath
+
 export default Installations;

@@ -23,17 +23,6 @@ class App extends Component {
       installationSelected: null,
       installations: data.installations
     };
-    this.check = this.check.bind(this);
-  }
-
-  check() {
-    if (this.state.detailSelected && this.state.installationSelected) {
-      let request = this.state.installations[
-        this.state.installationSelected - 1
-      ][this.state.detailSelected];
-      // alert(request);
-      // this.setState({ detailSelected: null, installationSelected: null });
-    }
   }
 
   onDragEnd = result => {
@@ -49,8 +38,8 @@ class App extends Component {
     }
     if (destination.droppableId === "droppableMerge") {
       isNaN(draggableId)
-        ? this.setState({ detailSelected: draggableId }, this.check)
-        : this.setState({ installationSelected: draggableId }, this.check);
+        ? this.setState({ detailSelected: draggableId })
+        : this.setState({ installationSelected: draggableId });
     }
   };
 
@@ -66,7 +55,7 @@ class App extends Component {
             >
               <Grid container justify="center">
                 <Grid item xs={2}>
-                  <Details details={this.state.details} style={{}}/>
+                  <Details details={this.state.details} style={{}} />
                 </Grid>
                 <Grid item xs={8}>
                   <Droppable droppableId={this.state.column.droppable.id}>
@@ -76,7 +65,6 @@ class App extends Component {
                         {...provided.droppableProps}
                         style={{ height: "100%" }}
                       >
-                        {/* {console.log(this.state.column.droppable.tasks)} */}
                         <Result
                           detailSelected={this.state.detailSelected}
                           details={this.state.details}

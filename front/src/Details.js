@@ -7,7 +7,6 @@ const Details = ({ details }) => (
     {(provided, snapshot) => (
       <div ref={provided.innerRef}>
         {details.map((detail, index) => (
-          // rendre detail draggable avec detail.type comme draggable id
           <Draggable draggableId={detail.id} index={index} key={index}>
             {provided => (
               <div
