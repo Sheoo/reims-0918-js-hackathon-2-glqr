@@ -56,9 +56,9 @@ class App extends Component {
 
   render() {
     return (
-      <Grid container alignItems="center" style={{ height: "100%" }}>
-        <Grid>
-          <img src="icons/logo.svg" />
+      <Grid container style={{ height: "100%" }}>
+        <Grid container justify="center">
+          <img src="icons/logo.png" />
         </Grid>
         <Grid item xs={12}>
           <DragDropContext
@@ -75,7 +75,7 @@ class App extends Component {
               >
                 <Details details={this.state.details} />
               </Grid>
-              <Grid item xs={8}>
+              <Grid item xs={6}>
                 <Droppable droppableId={this.state.column.droppable.id}>
                   {provided => (
                     <div
@@ -97,7 +97,7 @@ class App extends Component {
               <Grid
                 className="border"
                 item
-                xs={2}
+                xs={4}
                 style={{ textAlign: "center", backgroundColor: "#EF914B" }}
               >
                 <Installations installations={this.state.installations} />
