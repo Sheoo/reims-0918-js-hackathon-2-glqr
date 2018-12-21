@@ -26,19 +26,19 @@
       "id": 1,
       "name": "Bar éphémère",
       "path": "icons/installations-icons/bar-ephemere_c.svg",
-      "description": "Un bar éphémère est un bar destiné à changé de thème pour une présentation",
+      "description": "Un bar éphémère est un bar destiné à changer de thème pour chaque présentation",
       "info": "Notre bar éphémère est disponible à toutes propositions de thèmes et est disponible à l'entrée de notre bâtiment",
-      "events": "Venez découvrir notre bar éphémère pendants ces événements: - Le bar éphémère est ouvert à tous, aux heures d'ouverture de Saint-Ex ainsi que lors des évènements, soirées et vernissages: - Le jeudi 17 janvier à 18h30: inauguration Bar Éphémère #25 'Mise en Abysse, entrée libre + 1 boisson offerte. - Le jeudi 17 mai 2019 de 18h30 à 22h: dîner conviviale Bar Éphémère#25 'Mise en Abysse' sur réservation, 7 euros tout public, 5 euros adhérents (boisson non comprises). ",
+      "events": "Venez découvrir notre bar éphémère pendant tous les événements ! Le bar éphémère est ouvert à tous, aux heures d'ouverture de Saint-Ex ainsi que lors des évènements, soirées et vernissages. Le jeudi 17 janvier à 18h30 : inauguration Bar Éphémère #25 'Mise en Abysse, entrée libre + 1 boisson offerte. - Le jeudi 17 mai 2019 de 18h30 à 22h: dîner conviviale Bar Éphémère#25 'Mise en Abysse' sur réservation, 7 euros tout public, 5 euros adhérents (boissons non comprises). ",
       "picture": "https://farm2.staticflickr.com/1857/30947703808_91648c4944_z.jpg"
     },
     {
       "id": 2,
       "name": "Imprimante 3D",
       "path": "icons/installations-icons/imprimante_c.svg",
-      "description": "Une imprimante 3D est utiliser pour imprimer des objets en 3D",
+      "description": "L'impression 3D est une technique de fabrication dite additive qui procède par ajout de matière, contrairement aux techniques procédant par retrait de matière comme l'usinage. L'impression 3D permet de réaliser des objets usuels, des pièces détachées ou encore des prototypes destinés aux essais. Le point de départ est un fichier informatique représentant l'objet en trois dimensions, décomposé en tranches. Ces informations sont envoyées à une imprimante 3D qui va réaliser la fabrication par ajout de couches successives.",
       "info": "Notre imprimante 3D est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
-      "events": "Venez utiliser notre imprimante 3D pendant ces évenements:  - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
-      "picture": "https://www.flickr.com/photos/ccsaintexreims/22516651663/"
+      "events": "Venez utiliser notre imprimante 3D pendant ces évenements :  - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
+      "picture": "https://farm6.staticflickr.com/5641/22516651663_8e9da48b2c_k.jpg"
     },
     {
       "id": 3,
@@ -47,16 +47,16 @@
       "description": "La découpe laser est un procédé de fabrication qui consiste à découper la matière grâce à une grande quantité d’énergie générée par un laser et concentrée sur une très faible surface.",
       "info": "Notre découpeuse laser est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
       "events": "Venez utiliser notre découpeuse laser pendant ces événements: - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
-      "picture": "https://www.flickr.com/photos/ccsaintexreims/39705736994/"
+      "picture": "https://farm5.staticflickr.com/4694/39705736994_01b98e7736_k.jpg"
     },
     {
       "id": 4,
       "name": "Brodeuse numérique",
       "path": "icons/installations-icons/tricoteuse_c.svg",
       "description": "La broderie machine (ou broderie à la machine) est un processus de broderie par lequel une machine à coudre ou une machine à broder est utilisée pour créer des motifs sur les textiles",
-      "info": "Notre découpeuse laser est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
+      "info": "Notre brodeuse est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
       "events": "Venez utiliser notre brodeuse numérique pendant ces événements: - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
-      "picture": "https://www.flickr.com/photos/ccsaintexreims/25690280831/"
+      "picture": "https://farm2.staticflickr.com/1450/25690280831_34acc438b3_k.jpg"
     },
     {
       "id": 5,
@@ -65,16 +65,16 @@
       "description": "La découpeuse vinyle est muni d'une fine lame permettant une découpe précise. La lame se déplace de droite à gauche tandis que le vinyle glisse sous la lame.",
       "info": "Notre découpeuse vinyle est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
       "events": "Venez utiliser notre découpeuse vinyle pendant ces événements: - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
-      "picture": "https://www.flickr.com/photos/ccsaintexreims/33703602311/"
+      "picture": "https://farm3.staticflickr.com/2934/33703602311_a5800369ae_k.jpg"
     },
     {
       "id": 6,
       "name": "Borne d'arcade",
-      "path": "icons/installations-icon/",
+      "path": "icons/installations-icons/borne_c.svg",
       "description": "Machine à jouer payante ou gratuite, contenant un jeu, remplaçable ou non, qui est dotée d'un écran, d'un dispositif de contrôle, de plusieurs boutons-poussoirs et d'un monnayeur, et que l'on trouve dans les lieux publics, comme les salles d'arcade, les centres commerciaux et les bars.",
       "info": "Nous disposons d'une Borne d'arcade et d'une borne miniature à Saint-Ex venez les utiliser ou créer votre jeux sur bornes d'arcades",
       "events": "Venez utiliser nos bornes d'arcade pendant ces événements: ",
-      "picture": "https://www.flickr.com/photos/ccsaintexreims/40599822820/"
+      "picture": "https://farm1.staticflickr.com/901/40599822820_2200711035_k.jpg"
     },
     {
       "id": 7,
@@ -92,7 +92,7 @@
       "description": "",
       "info": "Nous disposons d'un atelier pour la création de robot",
       "events": "Venez utiliser/créer nos/vos robots pendant ces événements: Tous les samedis à partir de 8 ans: De 10h à 11h30 et à partir de 10 ans: De 13h30 à 15h: Atelier Robotique",
-      "picture": "https://www.flickr.com/photos/ccsaintexreims/34045249571/"
+      "picture": "https://farm3.staticflickr.com/2860/34045249571_6a51a46704_k.jpg"
     }
   ]
 }
