@@ -3,6 +3,7 @@ import { Grid, Paper } from "@material-ui/core";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import "./App.css";
 import Details from "./Details";
+import Result from "./Result";
 import Installations from "./Installations";
 const data = require("./data.json");
 
@@ -76,7 +77,11 @@ class App extends Component {
                         style={{ height: "100%" }}
                       >
                         {/* {console.log(this.state.column.droppable.tasks)} */}
-                        {provided.placeholder}
+                        <Result
+                          detailSelected={this.state.detailSelected}
+                          installationSelected={this.state.installationSelected}
+                          installations={this.state.installations}
+                        />
                       </div>
                     )}
                   </Droppable>
