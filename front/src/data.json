@@ -1,15 +1,31 @@
 {
   "details": [
-    { "id": "description", "name": "Description", "path":"icons/details-icons/explication_c.svg" },
-    { "id": "info", "name": "Informations", "path":"icons/details-icons/information_c.svg" },
-    { "id": "events", "name": "Evènements", "path":"icons/details-icons/evenement_c.svg" },
-    { "id": "picture", "name": "Photos", "path":"icons/details-icons/photo.svg" }
+    {
+      "id": "description",
+      "name": "Description",
+      "path": "icons/details-icons/explication_c.svg"
+    },
+    {
+      "id": "info",
+      "name": "Informations",
+      "path": "icons/details-icons/information_c.svg"
+    },
+    {
+      "id": "events",
+      "name": "Evènements",
+      "path": "icons/details-icons/evenement_c.svg"
+    },
+    {
+      "id": "picture",
+      "name": "Photos",
+      "path": "icons/details-icons/photo.svg"
+    }
   ],
   "installations": [
     {
       "id": 1,
       "name": "Bar éphémère",
-      "path": "icons/installations-icon/bar-ephemere_c.svg",
+      "path": "icons/installations-icons/bar-ephemere_c.svg",
       "description": "Un bar éphémère est un bar destiné à changé de thème pour une présentation",
       "info": "Notre bar éphémère est disponible à toutes propositions de thèmes et est disponible à l'entrée de notre bâtiment",
       "events": "Venez découvrir notre bar éphémère pendants ces événements: - Le bar éphémère est ouvert à tous, aux heures d'ouverture de Saint-Ex ainsi que lors des évènements, soirées et vernissages: - Le jeudi 17 janvier à 18h30: inauguration Bar Éphémère #25 'Mise en Abysse, entrée libre + 1 boisson offerte. - Le jeudi 17 mai 2019 de 18h30 à 22h: dîner conviviale Bar Éphémère#25 'Mise en Abysse' sur réservation, 7 euros tout public, 5 euros adhérents (boisson non comprises). ",
@@ -18,7 +34,7 @@
     {
       "id": 2,
       "name": "Imprimante 3D",
-      "path": "icons/installations-icon/",
+      "path": "icons/installations-icons/imprimante_c.svg",
       "description": "Une imprimante 3D est utiliser pour imprimer des objets en 3D",
       "info": "Notre imprimante 3D est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
       "events": "Venez utiliser notre imprimante 3D pendant ces évenements:  - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
@@ -27,7 +43,7 @@
     {
       "id": 3,
       "name": "Découpeuse Laser",
-      "path": "icons/installations-icon/",
+      "path": "icons/installations-icons/laser_c.svg",
       "description": "La découpe laser est un procédé de fabrication qui consiste à découper la matière grâce à une grande quantité d’énergie générée par un laser et concentrée sur une très faible surface.",
       "info": "Notre découpeuse laser est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
       "events": "Venez utiliser notre découpeuse laser pendant ces événements: - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
@@ -36,7 +52,7 @@
     {
       "id": 4,
       "name": "Brodeuse numérique",
-      "path": "icons/installations-icon/",
+      "path": "icons/installations-icons/tricoteuse_c.svg",
       "description": "La broderie machine (ou broderie à la machine) est un processus de broderie par lequel une machine à coudre ou une machine à broder est utilisée pour créer des motifs sur les textiles",
       "info": "Notre découpeuse laser est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
       "events": "Venez utiliser notre brodeuse numérique pendant ces événements: - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
@@ -45,7 +61,7 @@
     {
       "id": 5,
       "name": "Découpeuse vinyle",
-      "path": "icons/installations-icon/",
+      "path": "icons/installations-icons/plotter_c.svg",
       "description": "La découpeuse vinyle est muni d'une fine lame permettant une découpe précise. La lame se déplace de droite à gauche tandis que le vinyle glisse sous la lame.",
       "info": "Notre découpeuse vinyle est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
       "events": "Venez utiliser notre découpeuse vinyle pendant ces événements: - Tous les mardi de 17h30 à 21h30: FabLab ouvert. - Tous les jeudi de 17h30 à 19h: Rendez-Vous découverte FabLab gratuit. - Tous les jeudi de 18h à 22h: FabLab Ouvert.",
@@ -64,7 +80,7 @@
     {
       "id": 7,
       "name": "Casque de réalité virtuelle",
-      "path": "icons/installations-icon/",
+      "path": "icons/installations-icons/casque_c.svg",
       "description": "Un casque de réalité virtuelle est un dispositif d'affichage, porté sur la tête ou dans un casque, qui a un petit écran d'affichage en face d'un œil (visiocasque monoculaire) ou de chaque œil (visiocasque binoculaire). Ces casques permettent de regarder des films en 3D ou de jouer à des jeux en stéréoscopie",
       "info": "Nous disposons d'un casque de réalité virtuelle dans notre atelier",
       "events": "Venez utiliser notre casque de réalité virtuelle pendant ces événements: Tous les vendredis à partir de 12 ans: De 17h30 à 18h30: LaboAdo ",
@@ -73,7 +89,7 @@
     {
       "id": 8,
       "name": "Robot",
-      "path": "icons/installations-icon/",
+      "path": "icons/installations-icons/robot_c.svg",
       "description": "",
       "info": "Nous disposons d'un atelier pour la création de robot",
       "events": "Venez utiliser/créer nos/vos robots pendant ces événements: Tous les samedis à partir de 8 ans: De 10h à 11h30 et à partir de 10 ans: De 13h30 à 15h: Atelier Robotique",
