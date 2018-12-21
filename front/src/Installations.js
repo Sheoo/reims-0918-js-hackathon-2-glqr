@@ -17,6 +17,7 @@ const Installations = ({ installations }) => (
               >
                 <Installation
                   installationLabel={installation.name}
+                  installationPath={installation.path}
                   index={index}
                 />
               </div>
@@ -28,5 +29,5 @@ const Installations = ({ installations }) => (
     )}
   </Droppable>
 );
-
+// installationLabel, installationPath
 export default Installations;

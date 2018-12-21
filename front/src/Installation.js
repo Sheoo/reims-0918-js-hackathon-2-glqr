@@ -1,12 +1,7 @@
 import React from "react";
-import { Chip } from "@material-ui/core";
 
-const Installation = ({ installationLabel }) => (
-  <Chip
-    clickable
-    color="primary"
-    label={installationLabel}
-  />
+const Installation = ({ installationLabel, installationPath }) => (
+  <img src={installationPath} alt={installationLabel} />
 );
 
 export default Installation;
