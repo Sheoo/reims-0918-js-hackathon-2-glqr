@@ -55,27 +55,40 @@ class App extends Component {
 
   render() {
     return (
-      <DragDropContext
-        onDragEnd={this.onDragEnd}
-        onDragStart={this.onDragStart}
-        onDragUpdate={this.onDragUpdate}
-      >
-        <Installations
-          installations={this.state.installations}
-        />
-        <Droppable droppableId={this.state.column.droppable.id}>
-          {provided => (
-            <div ref={provided.innerRef} {...provided.droppableProps}>
-              {console.log(this.state.column.droppable.tasks)}
-              <h2>I am a droppable!</h2>
-              {provided.placeholder}
-            </div>
-          )}
-        </Droppable>
-        <Details
-          details={this.state.details}
-        />
-      </DragDropContext>
+      <Grid container alignItems="center" style={{ height: "100%" }}>
+        <Grid item xs={12}>
+          <Paper elevation={4} style={{ margin: 32 }}>
+            <DragDropContext
+              onDragEnd={this.onDragEnd}
+              onDragStart={this.onDragStart}
+              onDragUpdate={this.onDragUpdate}
+            >
+              <Grid container justify="center">
+                <Grid item xs={2}>
+                  <Details details={this.state.details} />
+                </Grid>
+                <Grid item xs={8}>
+                  <Droppable droppableId={this.state.column.droppable.id}>
+                    {provided => (
+                      <div
+                        ref={provided.innerRef}
+                        {...provided.droppableProps}
+                        style={{ height: "100%" }}
+                      >
+                        {/* {console.log(this.state.column.droppable.tasks)} */}
+                        {provided.placeholder}
+                      </div>
+                    )}
+                  </Droppable>
+                </Grid>
+                <Grid item xs={2} style={{ textAlign: "right" }}>
+                  <Installations installations={this.state.installations} />
+                </Grid>
+              </Grid>
+            </DragDropContext>
+          </Paper>
+        </Grid>
+      </Grid>
     );
   }
 }
