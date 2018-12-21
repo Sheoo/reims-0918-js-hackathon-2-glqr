@@ -57,6 +57,9 @@ class App extends Component {
   render() {
     return (
       <Grid container alignItems="center" style={{ height: "100%" }}>
+        <Grid>
+          <img src="icons/logo.svg" />
+        </Grid>
         <Grid item xs={12}>
           <DragDropContext
             onDragEnd={this.onDragEnd}
