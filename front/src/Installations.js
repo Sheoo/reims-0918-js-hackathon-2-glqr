@@ -3,7 +3,7 @@ import Installation from "./Installation";
 import { Draggable, Droppable } from "react-beautiful-dnd";
 
 const Installations = ({ installations, handleClick }) => (
-  <Droppable droppableId="droppable">
+  <Droppable droppableId="droppableInstall">
     {(provided, snapshot) => (
       <div ref={provided.innerRef}>
         {installations.map((installation, index) => (

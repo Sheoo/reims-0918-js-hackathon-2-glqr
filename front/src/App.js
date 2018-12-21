@@ -10,6 +10,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      column: {
+        droppable: {
+          id: "droppableMerge",
+          title: "merge",
+          tasks: [undefined, undefined]
+        }
+      },
       detailSelected: null,
       details: data.details,
       installationSelected: null,
@@ -41,20 +48,20 @@ class App extends Component {
     if (!destination) {
       return;
     }
+    if (destination) {
+      console.log("destination :", destination);
+    }
     if (
       destination.droppableId === source.droppableId &&
       destination.index === source.index
     ) {
-      console.log("draggableid :",source.draggableId);
-      console.log("destination :",destination.droppableId);
-      console.log("source :",source.droppableId);
       return;
     }
-    if (draggableId) {
-      console.log("dernier consolelog",source.draggableId);
+    if (destination.droppableId === "droppableMerge") {
+      isNaN(draggableId)
+        ? this.setState({ detailSelected: draggableId })
+        : this.setState({ installationSelected: draggableId });
     }
-    // console.log(detailSelected)
-    // const column = this.state.columns;
   };
 
   render() {
@@ -68,9 +75,10 @@ class App extends Component {
           installations={this.state.installations}
           handleClick={this.handleInstallationClick}
         />
-        <Droppable droppableId="droppable">
+        <Droppable droppableId={this.state.column.droppable.id}>
           {provided => (
             <div ref={provided.innerRef} {...provided.droppableProps}>
+              {console.log(this.state.column.droppable.tasks)}
               <h2>I am a droppable!</h2>
               {provided.placeholder}
             </div>

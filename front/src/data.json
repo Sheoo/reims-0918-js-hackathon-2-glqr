@@ -7,7 +7,7 @@
   ],
   "installations": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Bar éphémère",
       "description": "Un bar éphémère est un bar destiné à changé de thème pour une présentation",
       "info": "Notre bar éphémère est disponible à toutes propositions de thèmes et est disponible à l'entrée de notre bâtiment",
@@ -15,7 +15,7 @@
       "picture": "https://www.flickr.com/photos/ccsaintexreims/30947703808/"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Imprimante 3D",
       "description": "Une imprimante 3D est utiliser pour imprimer des objets en 3D",
       "info": "Notre imprimante 3D est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
@@ -23,7 +23,7 @@
       "picture": "https://www.flickr.com/photos/ccsaintexreims/22516651663/"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Découpeuse Laser",
       "description": "La découpe laser est un procédé de fabrication qui consiste à découper la matière grâce à une grande quantité d’énergie générée par un laser et concentrée sur une très faible surface.",
       "info": "Notre découpeuse laser est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
@@ -31,7 +31,7 @@
       "picture": "https://www.flickr.com/photos/ccsaintexreims/39705736994/"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Brodeuse numérique",
       "description": "La broderie machine (ou broderie à la machine) est un processus de broderie par lequel une machine à coudre ou une machine à broder est utilisée pour créer des motifs sur les textiles",
       "info": "Notre découpeuse laser est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
@@ -39,7 +39,7 @@
       "picture": "https://www.flickr.com/photos/ccsaintexreims/25690280831/"
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Découpeuse vinyle",
       "description": "La découpeuse vinyle est muni d'une fine lame permettant une découpe précise. La lame se déplace de droite à gauche tandis que le vinyle glisse sous la lame.",
       "info": "Notre découpeuse vinyle est disponible dans notre Fablab après le suivi d'une formation d'utilisation",
@@ -47,7 +47,7 @@
       "picture": "https://www.flickr.com/photos/ccsaintexreims/33703602311/"
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "Borne d'arcade",
       "description": "Machine à jouer payante ou gratuite, contenant un jeu, remplaçable ou non, qui est dotée d'un écran, d'un dispositif de contrôle, de plusieurs boutons-poussoirs et d'un monnayeur, et que l'on trouve dans les lieux publics, comme les salles d'arcade, les centres commerciaux et les bars.",
       "info": "Nous disposons d'une Borne d'arcade et d'une borne miniature à Saint-Ex venez les utiliser ou créer votre jeux sur bornes d'arcades",
@@ -56,7 +56,7 @@
     },
 
     {
-      "id": "7",
+      "id": 7,
       "name": "Casque de réalité virtuelle",
       "description": "Un casque de réalité virtuelle est un dispositif d'affichage, porté sur la tête ou dans un casque, qui a un petit écran d'affichage en face d'un œil (visiocasque monoculaire) ou de chaque œil (visiocasque binoculaire). Ces casques permettent de regarder des films en 3D ou de jouer à des jeux en stéréoscopie",
       "info": "Nous disposons d'un casque de réalité virtuelle dans notre atelier",
@@ -64,7 +64,7 @@
       "picture": "https://media.ldlc.com/ld/products/00/04/49/86/LD0004498659_2.jpg"
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "Robot",
       "description": "",
       "info": "Nous disposons d'un atelier pour la création de robot",
