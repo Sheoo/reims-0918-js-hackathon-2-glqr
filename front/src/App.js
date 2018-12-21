@@ -31,8 +31,8 @@ class App extends Component {
       let request = this.state.installations[
         this.state.installationSelected - 1
       ][this.state.detailSelected];
-      alert(request);
-      this.setState({ detailSelected: null, installationSelected: null });
+      // alert(request);
+      // this.setState({ detailSelected: null, installationSelected: null });
     }
   }
 
@@ -66,7 +66,7 @@ class App extends Component {
             >
               <Grid container justify="center">
                 <Grid item xs={2}>
-                  <Details details={this.state.details} />
+                  <Details details={this.state.details} style={{}}/>
                 </Grid>
                 <Grid item xs={8}>
                   <Droppable droppableId={this.state.column.droppable.id}>
@@ -79,6 +79,7 @@ class App extends Component {
                         {/* {console.log(this.state.column.droppable.tasks)} */}
                         <Result
                           detailSelected={this.state.detailSelected}
+                          details={this.state.details}
                           installationSelected={this.state.installationSelected}
                           installations={this.state.installations}
                         />

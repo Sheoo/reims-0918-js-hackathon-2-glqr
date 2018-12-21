@@ -1,19 +1,36 @@
 import React from "react";
 import { Chip } from "@material-ui/core";
+import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
 
-const Result = ({ detailSelected, installationSelected, installations }) => (
+const getDetail = (details, detailSelected) =>
+  details.find(detail => detail.id === detailSelected);
+
+const getInstallation = (installations, installationSelected) =>
+  installations.find(installation => installation.id === installationSelected);
+
+const Result = ({
+  detailSelected,
+  details,
+  installationSelected,
+  installations
+}) => (
   <div>
-    {detailSelected && !installationSelected && <Chip label={detailSelected} />}
+    {detailSelected && !installationSelected && (
+      <img src={getDetail(details, detailSelected).path} />
+    )}
     {installationSelected && !detailSelected && (
-      <Chip label={installationSelected} />
+      <img src={getInstallation(installations, installationSelected).path} />
     )}
     {detailSelected && installationSelected && (
-      <Chip
-        label={installations[installationSelected - 1][detailSelected]}
-        onClick={() =>
-          alert(installations[installationSelected - 1][detailSelected])
-        }
-      />
+      <Paper>
+        {(detailSelected === "picture") ? <img src={installations[installationSelected - 1].picture} />
+         : <Typography>
+         {installations[installationSelected - 1][detailSelected]}
+         {/* alert(installations[installationSelected - 1][detailSelected]) */}
+       </Typography>}
+        <img src={getInstallation(installations, installationSelected).path} />
+      </Paper>
     )}
   </div>
 );
