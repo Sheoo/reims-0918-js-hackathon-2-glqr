@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Grid, Paper } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import "./App.css";
 import Details from "./Details";
@@ -48,8 +48,8 @@ class App extends Component {
     }
     if (destination.droppableId === "droppableMerge") {
       isNaN(draggableId)
-        ? this.setState({ detailSelected: draggableId })
-        : this.setState({ installationSelected: draggableId });
+        ? this.setState({ detailSelected: draggableId }, this.check)
+        : this.setState({ installationSelected: draggableId }, this.check);
     }
   };
 
