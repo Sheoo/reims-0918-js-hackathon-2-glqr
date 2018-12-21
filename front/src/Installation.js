@@ -1,12 +1,11 @@
 import React from "react";
 import { Chip } from "@material-ui/core";
 
-const Installation = ({ installationLabel, installationId, handleClick }) => (
+const Installation = ({ installationLabel }) => (
   <Chip
     clickable
     color="primary"
     label={installationLabel}
-    onClick={() => handleClick(installationId)}
   />
 );
 

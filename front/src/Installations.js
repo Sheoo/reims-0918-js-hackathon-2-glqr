@@ -2,7 +2,7 @@ import React from "react";
 import Installation from "./Installation";
 import { Draggable, Droppable } from "react-beautiful-dnd";
 
-const Installations = ({ installations, handleClick }) => (
+const Installations = ({ installations }) => (
   <Droppable droppableId="droppableInstall">
     {(provided, snapshot) => (
       <div ref={provided.innerRef}>
@@ -17,8 +17,6 @@ const Installations = ({ installations, handleClick }) => (
               >
                 <Installation
                   installationLabel={installation.name}
-                  installationId={installation.id}
-                  handleClick={handleClick}
                   index={index}
                 />
               </div>
